@@ -82,10 +82,9 @@ const formatMoney = (value, currency = '') => {
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('login')
-  let _user = JSON.parse(localStorage.getItem("user") || "{}");
-  console.log({ _user })
-  const [isAuthenticated, setIsAuthenticated] = useState(_user ? true : false)
-  const [user, setUser] = useState(_user ? _user : null)
+  let _user = localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : null;
+  const [isAuthenticated, setIsAuthenticated] = useState(_user);
+  const [user, setUser] = useState(_user);
   const [dashboardData, setDashboardData] = useState(null);
   const [tokenListings, setTokenListings] = useState([]);
   const [activeSection, setActiveSection] = useState('dashboard')
