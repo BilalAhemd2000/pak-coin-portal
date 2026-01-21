@@ -9,7 +9,7 @@ const tabs = [
   { key: 'signup', label: 'Sign Up' },
 ]
 
-export const base_url = "http://blockverse-backend.vercel.app/api/v1";
+export const base_url = "https://blockverse-backend.vercel.app/api/v1";
 
 const summaryCards = (data) => {
   console.log({ data })
