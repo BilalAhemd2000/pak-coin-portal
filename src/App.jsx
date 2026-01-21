@@ -9,7 +9,7 @@ const tabs = [
   { key: 'signup', label: 'Sign Up' },
 ]
 
-export const base_url = "http://192.168.100.83:3050/api/v1";
+export const base_url = "http://blockverse-backend.vercel.app/api/v1";
 
 const summaryCards = (data) => {
   console.log({ data })
@@ -334,9 +334,9 @@ const App = () => {
 
         <aside className="sidebar">
           <div className="brand">
-            <div className="logo">P</div>
+            <div className="logo">B</div>
             <div>
-              <div className="brand-name">PakCoin</div>
+              <div className="brand-name">Blockverse</div>
               <div className="brand-subtitle">Digital finance</div>
             </div>
           </div>
@@ -367,7 +367,7 @@ const App = () => {
           <header className="dashboard-header">
             <div>
               <p className="eyebrow">
-                {isWithdrawView ? 'Withdraw' : 'PakCoin Dashboard'}
+                {isWithdrawView ? 'Withdraw' : 'Blockverse Dashboard'}
               </p>
               <h2 className='m-0'>
                 {isWithdrawView
@@ -663,8 +663,8 @@ const App = () => {
     <div className="auth">
       <section className="auth-copy">
         <div className="brand">
-          <div className="logo">P</div>
-          <span className="brand-name">PakCoin</span>
+          <div className="logo">B</div>
+          <span className="brand-name" style={{ color: "#000" }}>Blockverse</span>
         </div>
         <p className="kicker">The Future of</p>
         <h1>
